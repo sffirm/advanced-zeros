@@ -1,4 +1,17 @@
-module.exports = function getZerosCount(count, system) {
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+
+<script>
+
+getZerosCount(46899647, 232);
+
+function getZerosCount(count, system) {
 	var pseudoCount;
 	var finalZero = count;
 
@@ -16,8 +29,15 @@ module.exports = function getZerosCount(count, system) {
 				numbZero += Math.floor(number / i);
 				number = Math.floor(number / i);
 			}
+  				console.log(numbZero);
 			finalZero = Math.min (finalZero , Math.floor(numbZero / pseudoCount));
 		}
-	}
-	return finalZero;
+	}        
+  	console.log(finalZero);
 }
+
+
+</script>
+
+</body>
+</html>
